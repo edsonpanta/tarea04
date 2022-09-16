@@ -51,12 +51,22 @@ function main(){
 
      if (!numero == "") {
         if(numero<=0){
-            alert("!!!..Ingrese un valor númerico mayor a 0..!!!.");
+            //alert("!!!..Ingrese un valor númerico mayor a 0..!!!.");
+            Swal.fire(
+              'Verificar!',
+              'Ingrese un valor númerico mayor a 0!',
+              'warning'
+            );
             return;
         }
          
         if(isNaN(numero)){
-            alert("!!!..Ingrese un valor númerico válido..!!!.");
+            //alert("!!!..Ingrese un valor númerico válido..!!!.");
+            Swal.fire(
+              'Verificar!',
+              'Ingrese un valor númerico válido!',
+              'warning'
+            );
             return;
         }
 
