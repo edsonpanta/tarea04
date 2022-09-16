@@ -50,7 +50,11 @@ function main(){
     const textarea = document.getElementById('txtResultado');
 
      if (!numero == "") {
-
+        if(numero<=0){
+            alert("!!!..Ingrese un valor númerico mayor a 0..!!!.");
+            return;
+        }
+         
         if(isNaN(numero)){
             alert("!!!..Ingrese un valor númerico válido..!!!.");
             return;
